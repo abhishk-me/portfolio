@@ -288,7 +288,7 @@ export default function Index() {
         <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='flex flex-col lg:px-2 w-full'>
             <p className=' lg:text-lg'>
-              Apart from these I've worked with on multiple freelance projects over the years with clients from US, Europe and India.
+              In addition, I've taken on multiple freelance projects over the years, working with clients from the US, Europe, and India.
             </p>
           </div>
         </div>
