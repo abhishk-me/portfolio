@@ -12,6 +12,14 @@ export const MenuBar = () => {
     setMenuExpanded(false);
   }, [location]);
 
+  const images = [
+    "https://i.ibb.co/sK8Qwnw/elevatr-inventory-shot.png",
+    "https://i.ibb.co/ctxnMYM/dashboard-design-shot.png",
+    "https://i.ibb.co/NxsdCRJ/elevatr-online-store-shot.png",
+    "https://i.ibb.co/g6cyCVL/store-editor-shot.png",
+    "https://i.ibb.co/9N4VJ5w/protofolio-trades-shot.png"
+  ]
+
   return (
     <>
       {menuExpanded && <div className='fixed inset-0 bg-transparent z-40' onClick={() => setMenuExpanded(false)} />}
@@ -53,12 +61,12 @@ export const MenuBar = () => {
             <div className='flex flex-row px-2 pb-4 pt-1'>
               <div className='px-1 lg:px-2 flex flex-1 flex-col'>
                 <div className='aspect-[1.4] lg:aspect-[1.6] bg-white rounded-xl overflow-hidden'>
-                  <img className='w-full h-full object-cover' src='https://cdn.dribbble.com/userupload/6706553/file/original-929662198a8b5b5eafd965b79cb21fa0.png?resize=700x525&vertical=center' />
+                  <img className='w-full h-full object-cover' src={images[2]} />
                 </div>
               </div>
               <div className='px-1 lg:px-2 flex flex-1 flex-col'>
                 <div className='aspect-[1.4] lg:aspect-[1.6] bg-white rounded-xl overflow-hidden'>
-                  <img className='w-full h-full object-cover' src='https://cdn.dribbble.com/userupload/7402782/file/original-d7b976714667d92a5ee535678e9c5ac1.png?resize=700x525&vertical=center' />
+                  <img className='w-full h-full object-cover' src={images[4]} />
                 </div>
               </div>
               {/* <div className='px-1 lg:px-2 flex flex-1 flex-col'>
@@ -109,25 +117,25 @@ export const MenuBar = () => {
             </div>
             <div className='flex flex-1' />
             <div className='flex flex-row justify-center px-2 py-4'>
-              <div className='flex flex-row items-center bg-black rounded-full h-10 p-1 cursor-pointer'>
+              <Link to={"https://abhishekbhaskar.in"} target='_blank' className='flex flex-row items-center bg-black rounded-full h-10 p-1 cursor-pointer'>
                 <div className='h-8 w-8 flex items-center justify-center rounded-full bg-black'>
                   <Globe size={18} color='#fff' />
                 </div>
-              </div>
+              </Link>
               <span className='mx-1' />
-              <div className='flex flex-row items-center bg-black rounded-full h-10 p-1 cursor-pointer'>
+              <Link to={"https://www.linkedin.com/in/abhishk-me/"} target='_blank' className='flex flex-row items-center bg-black rounded-full h-10 p-1 cursor-pointer'>
                 <div className='h-8 w-8 flex items-center justify-center rounded-full bg-black'>
                   <Linkedin size={18} color='#fff' />
                 </div>
-              </div>
+              </Link>
               <span className='mx-1' />
-              <div className='flex flex-row items-center bg-black rounded-full h-10 p-1 cursor-pointer'>
+              <Link to={"https://www.instagram.com/_abhishek_bhaskar/"} target='_blank' className='flex flex-row items-center bg-black rounded-full h-10 p-1 cursor-pointer'>
                 <div className='h-8 w-8 flex items-center justify-center rounded-full bg-black'>
                   <Instagram size={18} color='#fff' />
                 </div>
-              </div>
+              </Link>
               <span className='mx-1' />
-              <div className='flex flex-row items-center bg-black rounded-full h-10 p-1 group/mail cursor-pointer'>
+              <Link to={"mailto:abhishk.me@gmail.com"} className='flex flex-row items-center bg-black rounded-full h-10 p-1 group/mail cursor-pointer'>
                 <div className='h-8 w-8 flex items-center justify-center rounded-full overflow-hidden bg-white'>
                   <Mail size={18} color='#000' />
                 </div>
@@ -137,7 +145,7 @@ export const MenuBar = () => {
                     <p className='h-6 flex items-center text-white font-semibold'>Say Hello!</p>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <p className='pb-4 text-center text-sm font-semibold px-6'>This site is designed and developed from scratch by me</p>
           </div>

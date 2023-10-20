@@ -98,6 +98,9 @@ export default function Index() {
                 ReactJS
               </p>
               <p className='border border-[var(--text)] border-opacity-30 rounded-full text-xs font-medium px-4 py-1.5 m-0.5'>
+                React Native
+              </p>
+              <p className='border border-[var(--text)] border-opacity-30 rounded-full text-xs font-medium px-4 py-1.5 m-0.5'>
                 NodeJS
               </p>
               <p className='border border-[var(--text)] border-opacity-30 rounded-full text-xs font-medium px-4 py-1.5 m-0.5'>
@@ -132,7 +135,7 @@ export default function Index() {
         <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='flex flex-col lg:px-2 w-full'>
             <p className=' lg:text-lg leading-snug'>
-              I have more than 3 years of experience building apis and implementing features using techlonogies like NodeJS, expressJS, NestJS, GraphQL, MongoDB, couchbase, etc.
+              I have more than 3 years of experience building apps and implementing features using technologies like NodeJS, expressJS, NestJS, GraphQL, MongoDB, couchbase, etc.
             </p>
           </div>
         </div>
@@ -217,14 +220,14 @@ export default function Index() {
         <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='flex flex-col lg:px-2 w-full'>
             <p className=' lg:text-lg leading-snug'>
-              I like to make digital experiences easier and simple for users with eye catching interfaces.
+              I like to make digital experiences easy and simple for users with eye catching interfaces.
             </p>
           </div>
         </div>
         <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='flex flex-col lg:px-2 w-full'>
             <p className='lg:text-lg leading-snug'>
-              Most of the times I work on features end to end - from designing and testing to development. This translates to designing for optimal development efficiency. Plus I can develop pretty much any feature.
+              Most of the time I work on features end to end - from designing and testing to development. This translates to designing for optimal development efficiency. Plus I can develop pretty much any feature.
             </p>
           </div>
         </div>
@@ -247,7 +250,7 @@ export default function Index() {
               Online store builder
             </p>
             <p className='leading-snug px-3 py-4'>
-              I created an online store builder for elevatr. businesses can use templates or build an online store from scratch with custome design.
+              I created an online store builder for elevatr. businesses can use templates or build an online store from scratch with custom design.
             </p>
           </div>
         </div>
@@ -260,11 +263,11 @@ export default function Index() {
               Video collaboration software
             </p>
             <p className='leading-snug px-3 py-4'>
-              A video collaboration tool for producers and editors. Manage projects and tasks with kanban board. Sharable video link to get reviews from anyone with features like comments on timeline and highlighting frames.
+              A video collaboration tool for producers and editors. Manage projects and tasks with Kanban board. Sharable video link to get reviews from anyone with features like comments on the timeline and highlighting frames.
             </p>
           </div>
         </div>
-        <Link to="projects" className='inline-flex self-start flex-row flex-wrap items-center px-6 py-3 bg-[var(--accent)] rounded-3xl mt-1'>
+        <Link to="experience" className='inline-flex self-center flex-row flex-wrap items-center px-6 py-3 bg-[var(--accent)] rounded-3xl mt-1'>
           <div className='flex flex-row items-center'>
             <p style={{ color: "#000" }} className='font-semibold leading-snug pr-2'>
               See more
@@ -273,7 +276,7 @@ export default function Index() {
           </div>
         </Link>
       </div>
-      <div className='py-60'></div>
+      <div className='py-20'></div>
     </>
   );
 }

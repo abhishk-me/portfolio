@@ -1,6 +1,7 @@
 import type { V2_MetaFunction, LinksFunction } from "@remix-run/node";
 import { CornerRightDown, ExternalLink, Feather, Plus } from "react-feather"
 import { useState } from 'react';
+import { Link } from '@remix-run/react';
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -99,14 +100,14 @@ export default function Index() {
             </p>
           </div>
           <div className='flex flex-row w-full pt-3 -ml-0.5'>
-            <p className='text-sm px-4 py-1.5 rounded-full flex flex-row items-center bg-[var(--accent)] font-medium'>
+            <Link to={'https://react.dev/'} target='_blank' className='text-sm px-4 py-1.5 rounded-full flex flex-row items-center bg-[var(--accent)] font-medium'>
               <span className='mr-1' style={{ color: "#000" }}>React</span>
               <ExternalLink color='#000' size={12} />
-            </p>
-            <p className='text-sm ml-2 px-4 py-1.5 rounded-full flex flex-row items-center bg-[var(--accent)] font-medium'>
+            </Link>
+            <Link to={'https://remix.run/'} target='_blank' className='text-sm ml-2 px-4 py-1.5 rounded-full flex flex-row items-center bg-[var(--accent)] font-medium'>
               <span className='mr-1' style={{ color: "#000" }}>Remix</span>
               <ExternalLink color='#000' size={12} />
-            </p>
+            </Link>
           </div>
         </div>
         <div className='flex flex-row flex-wrap items-center px-6 py-4 pt-6 bg-2 rounded-3xl rounded-bl-lg mt-3'>
@@ -125,43 +126,36 @@ export default function Index() {
             </p>
           </div>
           <div className='flex flex-row w-full pt-3 -ml-0.5'>
-            <p className='text-sm px-4 py-1.5 rounded-full flex flex-row items-center bg-[var(--accent)] font-medium'>
+            <Link to={'https://tailwindcss.com/'} target='_blank' className='text-sm px-4 py-1.5 rounded-full flex flex-row items-center bg-[var(--accent)] font-medium'>
               <span className='mr-1' style={{ color: "#000" }}>Tailwind CSS</span>
               <ExternalLink color='#000' size={12} />
-            </p>
-            <p className='text-sm ml-2 px-4 py-1.5 rounded-full flex flex-row items-center bg-[var(--accent)] font-medium'>
+            </Link>
+            <Link to={'https://feathericons.com/'} target='_blank' className='text-sm ml-2 px-4 py-1.5 rounded-full flex flex-row items-center bg-[var(--accent)] font-medium'>
               <span className='mr-1' style={{ color: "#000" }}>Feather</span>
               <ExternalLink color='#000' size={12} />
-            </p>
+            </Link>
           </div>
         </div>
         <div className='flex flex-row flex-wrap items-center px-6 py-4 pt-6 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='h-12 bg-white rounded-xl px-4 flex items-center'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="204" height="30" fill="none" viewBox="0 0 204 30" style={{ width: 160, height: 24 }}><g clip-path="url(#a)"><path fill="#FBAD41" d="M52.688 13.028c-.22 0-.437.008-.654.015a.297.297 0 0 0-.102.024.365.365 0 0 0-.236.255l-.93 3.249c-.401 1.397-.252 2.687.422 3.634.618.876 1.646 1.39 2.894 1.45l5.045.306c.15.008.28.08.359.199a.492.492 0 0 1 .051.434.64.64 0 0 1-.547.426l-5.242.306c-2.848.132-5.912 2.456-6.987 5.29l-.378 1a.28.28 0 0 0 .248.382h18.054a.48.48 0 0 0 .464-.35 13.12 13.12 0 0 0 .48-3.54c0-7.22-5.789-13.072-12.933-13.072"></path><path fill="#000" d="M85.519 18.886h2.99v8.249h5.218v2.647h-8.208V18.886ZM96.819 24.365v-.032c0-3.13 2.493-5.665 5.821-5.665 3.327 0 5.789 2.508 5.789 5.633v.032c0 3.129-2.493 5.665-5.821 5.665s-5.79-2.505-5.79-5.633Zm8.562 0v-.032c0-1.573-1.123-2.942-2.773-2.942-1.65 0-2.725 1.337-2.725 2.91v.032c0 1.572 1.122 2.942 2.757 2.942 1.634 0 2.741-1.338 2.741-2.91ZM112.086 25.003V18.89h3.033v6.055c0 1.572.783 2.317 1.985 2.317 1.201 0 1.985-.717 1.985-2.242v-6.134h3.032v6.039c0 3.519-1.985 5.056-5.049 5.056s-4.99-1.573-4.99-4.98M126.694 18.889h4.159c3.848 0 6.081 2.241 6.081 5.382v.032c0 3.14-2.265 5.477-6.144 5.477h-4.096V18.886v.004Zm4.202 8.216c1.788 0 2.97-.995 2.97-2.754v-.032c0-1.744-1.185-2.755-2.97-2.755h-1.217v5.541h1.217ZM141.277 18.886h8.621v2.648h-5.636v1.85h5.096v2.505h-5.096v3.893h-2.985V18.886ZM154.054 18.886h2.989v8.249h5.219v2.647h-8.208V18.886ZM170.067 18.809h2.878l4.589 10.971h-3.202l-.788-1.946h-4.159l-.768 1.946h-3.143l4.589-10.971h.004Zm2.619 6.676-1.202-3.097-1.217 3.097h2.419ZM181.383 18.889h5.096c1.647 0 2.789.438 3.509 1.182.635.621.954 1.465.954 2.536v.032c0 1.664-.879 2.77-2.218 3.344l2.572 3.797h-3.45l-2.17-3.3h-1.308v3.3h-2.989V18.886l.004.004Zm4.959 5.23c1.016 0 1.602-.497 1.602-1.29v-.031c0-.856-.614-1.29-1.618-1.29h-1.954v2.616h1.973l-.003-.004ZM195.253 18.886h8.669v2.568h-5.711v1.648h5.175v2.384h-5.175v1.728h5.79v2.568h-8.748V18.886ZM78.976 25.642c-.418.956-1.3 1.633-2.47 1.633-1.63 0-2.756-1.37-2.756-2.942V24.3c0-1.573 1.094-2.91 2.725-2.91 1.229 0 2.166.764 2.564 1.807h3.147c-.505-2.591-2.757-4.53-5.683-4.53-3.324 0-5.821 2.536-5.821 5.665v.032c0 3.129 2.461 5.633 5.79 5.633 2.843 0 5.068-1.864 5.655-4.36h-3.155l.004.004Z"></path><path fill="#F6821F" d="m44.808 29.578.334-1.175c.402-1.397.253-2.687-.42-3.634-.62-.876-1.647-1.39-2.896-1.45l-23.665-.306a.467.467 0 0 1-.374-.199.492.492 0 0 1-.052-.434.64.64 0 0 1 .552-.426l23.886-.306c2.836-.131 5.9-2.456 6.975-5.29l1.362-3.6a.914.914 0 0 0 .04-.477C48.998 5.259 42.79 0 35.368 0c-6.842 0-12.647 4.462-14.73 10.665a6.92 6.92 0 0 0-4.911-1.374c-3.28.33-5.92 3.002-6.246 6.318a7.148 7.148 0 0 0 .18 2.472c-5.36.16-9.66 4.598-9.66 10.052 0 .493.035.979.106 1.453a.46.46 0 0 0 .457.402h43.704a.57.57 0 0 0 .54-.418"></path></g><defs><clipPath id="a"><path fill="#FFF" d="M0 0h204v30H0z"></path></clipPath></defs></svg>
+            <svg aria-label="Vercel logotype" height="22" role="img" viewBox="0 0 283 64"><path d="M141.68 16.25c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.46 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zm117.14-14.5c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.45 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zm-39.03 3.5c0 6 3.92 10 10 10 4.12 0 7.21-1.87 8.8-4.92l7.68 4.43c-3.18 5.3-9.14 8.49-16.48 8.49-11.05 0-19-7.2-19-18s7.96-18 19-18c7.34 0 13.29 3.19 16.48 8.49l-7.68 4.43c-1.59-3.05-4.68-4.92-8.8-4.92-6.07 0-10 4-10 10zm82.48-29v46h-9v-46h9zM37.59.25l36.95 64H.64l36.95-64zm92.38 5l-27.71 48-27.71-48h10.39l17.32 30 17.32-30h10.39zm58.91 12v9.69c-1-.29-2.06-.49-3.2-.49-5.81 0-10 4-10 10v14.8h-9v-34h9v9.2c0-5.08 5.91-9.2 13.2-9.2z" fill="var(--geist-foreground)"></path></svg>
           </div>
           <div className='flex flex-col w-full pt-3'>
             <p className=' lg:text-lg leading-snug'>
-              Cloudflare pages for Remix app deployement.
+              Vercel for Remix app deployement.
             </p>
           </div>
           <div className='flex flex-row w-full pt-3 -ml-0.5'>
-            <p className='text-sm px-4 py-1.5 rounded-full flex flex-row items-center bg-[var(--accent)] font-medium'>
-              <span className='mr-1' style={{ color: "#000" }}>Cloudflare pages</span>
+            <Link to={'https://vercel.com/'} target='_blank' className='text-sm px-4 py-1.5 rounded-full flex flex-row items-center bg-[var(--accent)] font-medium'>
+              <span className='mr-1' style={{ color: "#000" }}>Vercel</span>
               <ExternalLink color='#000' size={12} />
-            </p>
+            </Link>
           </div>
         </div>
         <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='flex flex-col lg:px-2 w-full'>
             <p className=' lg:text-lg leading-snug'>
-              Typeform for contact form.
-            </p>
-          </div>
-        </div>
-        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
-          <div className='flex flex-col lg:px-2 w-full'>
-            <p className=' lg:text-lg leading-snug'>
-              No other library or packages are being used for this site's functionality
+              <a className='underline' target='_blank' href='https://www.typeform.com/'>Typeform</a> for contact form.
             </p>
           </div>
         </div>

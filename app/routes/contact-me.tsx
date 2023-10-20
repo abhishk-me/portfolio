@@ -68,8 +68,15 @@ export default function Index() {
         <div className='flex flex-row flex-wrap items-center bg-[#fff] pb-6 overflow-hidden rounded-3xl rounded-bl-lg mt-3 h-80 lg:h-[450px]'>
           <Widget id="OYQHiQPl" style={{ width: '100%', height: "100%", backgroundColor: "#fff" }} className="my-form" />
         </div>
+        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-col lg:px-2 w-full'>
+            <p className=''>
+              Or, email me: abhishk.me@gmail.com
+            </p>
+          </div>
+        </div>
       </div>
-      <div className='py-60'></div>
+      <div className='py-20'></div>
     </>
   );
 }

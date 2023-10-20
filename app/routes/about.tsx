@@ -1,11 +1,12 @@
 import type { V2_MetaFunction, LinksFunction } from "@remix-run/node";
-import { ArrowRight, ArrowUpRight, Bell, GitHub, Globe, Instagram, Mail, MapPin, Star, X } from "react-feather"
+import { ArrowRight, ArrowUpRight, Bell, Book, GitHub, Globe, Instagram, Mail, MapPin, Music, Play, Star, X } from "react-feather"
 import ProfilePicture from '../assets/profile.jpg';
 import StoreEditorDemo from '../assets/store-editor-demo.mov';
 import EdifloDemo from '../assets/ediflo-demo.gif';
 import ElevatrDemo from '../assets/entstaack-demo.gif';
 import { useState } from 'react';
 import { Link } from '@remix-run/react';
+import { Spotify } from 'react-spotify-embed';
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -76,14 +77,14 @@ export default function Index() {
         <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='flex flex-col lg:px-2 w-full'>
             <p className='text-2xl lg:text-2xl font-bold leading-snug'>
-              I'm Abhishek. A designer, maker and problem solver.
+              I'm Abhishek. A developer, designer and problem solver.
             </p>
           </div>
         </div>
         <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='flex flex-col lg:px-2 w-full'>
             <p className=' lg:text-lg'>
-              I've always been intrigued by the intersection of art and technology, and I've never hesitated to dive right in and experiment, whether it's working with tools like Photoshop, Figma, Illustrator, Procreate, Blender, or CSS. My journey in computer-based design started from the very moment I first launched Microsoft Paint.
+              I've always been intrigued by the intersection of art and technology, and I've never hesitated to dive right in and experiment, whether it's working with tools like Photoshop, Figma, Illustrator, Procreate, Blender, or Web technologies.
             </p>
           </div>
         </div>
@@ -102,18 +103,64 @@ export default function Index() {
             </p>
           </div>
         </div>
-        <div className='inline-flex self-start flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
-          <div className='flex flex-col pr-3'>
-            <p className='text-[var(--accent)] font-medium text-sm leading-snug'>
-              Scroll to see more
+        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-col lg:px-2 w-full'>
+            <p className=' lg:text-lg'>
+              Zooming ahead to 2023, I've worked for multiple early-stage and growing startups in high-octane settings. I've been right there, shoulder to shoulder with the people making critical decisions, and more often than not, I've played a pivotal role in guiding their technical choices.
             </p>
           </div>
+        </div>
+        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-col lg:px-2 w-full'>
+            <p className=' lg:text-lg'>
+              I like doing what I do, and I'm all about aiming for the best. I'm a stickler for quality and pay close attention to the finer details in everything I work on. I truly believe that even the smallest things, like a single pixel, a line of code, or a decision, can have a big impact. I'm all in when it comes to making those details count.
+            </p>
+          </div>
+        </div>
+        <div className='inline-flex self-start flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='w-5 h-8 bg-white rounded-full flex flex-col items-center py-1'>
             <div className='scroll-dot bg-black'></div>
           </div>
         </div>
+        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-col lg:px-2 w-full'>
+            <p className=' lg:text-lg'>
+              When I'm not working, I'm either hanging out with friends, playing games,hitting the gym, indulging in DIY projects, enjoying music, or binge-watching a series.
+            </p>
+          </div>
+        </div>
+        <div className='px-4 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-row'>
+            <div className='w-8 h-8 rounded-full flex items-center justify-center bg-[var(--accent)]'>
+              <span className='pl-0.5' />
+              <Play color='#000' size={16} />
+            </div>
+            <div className='flex flex-col flex-1 pl-3'>
+              <p className='opacity-60'>
+                Watching right now
+              </p>
+              <p className='mt-1'>
+                Lately I've been hooked to The mentalist. It's a crime show with a psychic-turned-detective who can read minds, well, sort of. It's very witty and entertaining and keeps me guessing with every episode.
+              </p>
+            </div>
+          </div>
+          <div className='flex flex-row mt-6'>
+            <div className='w-8 h-8 rounded-full flex items-center justify-center bg-[var(--accent)]'>
+              <Music color='#000' size={16} />
+            </div>
+            <div className='flex flex-col flex-1 pl-3'>
+              <p className='opacity-60'>
+                Listening to
+              </p>
+              <p className='mt-1 mb-4'>
+                From time to time, I curate a playlist that I can happily shuffle through for a while. Right now, this is my top choice playlist.
+              </p>
+              <Spotify color='red' width={"100%"} height={500} link="https://open.spotify.com/playlist/64ufxrz9F6A8Xn3Z2SScGN?si=f7f55223426b4fff" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div className='py-60'></div>
+      <div className='py-20'></div>
     </>
   );
 }

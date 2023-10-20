@@ -2,6 +2,7 @@
 module.exports = {
   tailwind: true,
   ignoredRouteFiles: ["**/.*"],
+  serverDependenciesToBundle: ["react-spotify-embed"],
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
   // serverBuildPath: "build/index.js",

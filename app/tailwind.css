@@ -286,5 +286,5 @@ html {
   background-color: #ffffff00;
   opacity: 1;
   background-image: radial-gradient(var(--dots) 1px, #ffffff00 1px);
-  background-size: 8px 8px;
+  background-size: 6px 6px;
 }

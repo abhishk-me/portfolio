@@ -1,9 +1,10 @@
 import type { V2_MetaFunction, LinksFunction } from "@remix-run/node";
 import ElevatrSite from '../assets/elevatr-site.png';
+import EdifloVideoPlayer from '../assets/ediflo-video-player.gif';
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "Abhishek Bhaskar - About this website" },
+    { title: "Work experience - Abhishek Bhaskar" },
     { name: "description", content: "Hey, This is Abhishek Bhaskar! Welcome to my page" },
     {
       property: "og:title",
@@ -205,6 +206,90 @@ export default function Index() {
               <li className='mt-2'>Implemented APIs for dashboard and reports.</li>
               <li className='mt-2'>Implemented APIs for live tracking and analytics with large data sets.</li>
             </ul>
+          </div>
+        </div>
+        <div className='flex flex-col flex-wrap items-center bg-2 rounded-3xl rounded-bl-lg mt-6 overflow-hidden'>
+          <div className='rounded-b-md overflow-hidden bg-black'>
+            <div className='dot-bg flex flex-row px-2 -mx-4 lg:mx-0 lg:px-4 py-4 overflow-hidden' >
+              <div className='flex flex-[3] flex-col -mt-8'>
+                <div className='flex flex-row'>
+                  <div className='flex flex-[3] flex-col'>
+                    <div className='h-28 rounded-xl overflow-hidden shadow-lg'>
+                      <img className='h-full w-full object-cover' src='https://i.ibb.co/6gVBTKM/ediflo-project-view.png' />
+                    </div>
+                  </div>
+                  <span className='px-2 lg:px-3' />
+                  <div className='flex flex-[2] flex-col'>
+                    <div className='h-28 rounded-xl overflow-hidden shadow-lg'>
+                      <img className='h-full w-full object-cover' src='https://i.ibb.co/d4dFfrR/ediflo-profile.png' />
+                    </div>
+                  </div>
+                </div>
+                <div className='h-40 rounded-xl overflow-hidden shadow-lg mt-4 lg:mt-6'>
+                  <img className='w-full h-full object-cover' src={EdifloVideoPlayer} />
+                </div>
+                <div className='flex flex-row mt-2 lg:mt-6 -mb-8'>
+                  <div className='flex flex-[2] flex-col'>
+                    <div className='h-24 rounded-xl overflow-hidden shadow-lg bg-black'>
+                      <img className='w-full object-cover' src='https://i.ibb.co/R3Nh3bx/ediflo-task-card.png' />
+                    </div>
+                  </div>
+                  <span className='px-1' />
+                  <div className='flex flex-[4] flex-col'>
+                    <div className='h-24 rounded-xl overflow-hidden shadow-lg bg-black'>
+                      <img className='w-full object-cover' src='https://i.ibb.co/wBSxNs6/ediflo-project-board.png' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span className='px-2 lg:px-3' />
+              <div className='flex flex-[2] flex-col'>
+                <div className='h-48 rounded-xl overflow-hidden shadow-lg -mt-8 bg-black'>
+                  <img className='h-full w-auto object-cover' src='https://i.ibb.co/Csq7rWZ/ediflo-task-detail.png' />
+                </div>
+                <div className='h-28 rounded-xl overflow-hidden shadow-lg mt-4 lg:mt-6 bg-black'>
+                  <img className='w-full h-full object-cover' src='https://i.ibb.co/23HWM94/edifo-project-info.png' />
+                </div>
+                <div className='h-16 rounded-xl overflow-hidden shadow-lg mt-4 lg:mt-6 -mb-8'>
+                  <img className='w-full object-cover' src='https://i.ibb.co/6gVBTKM/ediflo-project-view.png' />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col px-6 w-full lg:px-8 py-4'>
+            <p className='text-4xl font-bold leading-snug'>
+              Ediflo
+            </p>
+            <p className='text-[var(--accent)] font-medium text-sm leading-snug mt-3'>
+              Design and developement consultant.
+            </p>
+            <p className='text-[var(--accent)] opacity-60 text-sm leading-snug mt-1'>
+              July 2021 - Sept 2021
+            </p>
+            <p className='border self-start border-[var(--text)] border-opacity-30 rounded-full text-xs font-medium px-2 py-1 -mx-0.5 mt-4'>
+              Design and front-end
+            </p>
+            <ul className='list-disc pl-3.5'>
+              <li className='mt-2'>Full responsibility of designing interfaces and UX for the web app.</li>
+              <li className='mt-2'>Developed all the features for the web app.</li>
+              <li className='mt-2'>Built a kanban board for editors and producers to collaborate.</li>
+              <li className='mt-2'>Implemented a video collaboration feature with timestamp commenting and version management.</li>
+              <li className='mt-2'>Built a 3d collaboration prototype.</li>
+            </ul>
+            <p className='border self-start border-[var(--text)] border-opacity-30 rounded-full text-xs font-medium px-2 py-1 -mx-0.5 mt-6'>
+              Back-end
+            </p>
+            <ul className='list-disc pl-3.5'>
+              <li className='mt-2'>Helped developing APIs for various features.</li>
+              <li className='mt-2'>APIs including - Video upload, video version management, collaboraion module for kanban boards, Role management, etc.</li>
+            </ul>
+          </div>
+        </div>
+        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-col lg:px-2 w-full'>
+            <p className=' lg:text-lg'>
+              Apart from these I've worked with on multiple freelance projects over the years with clients from US, Europe and India.
+            </p>
           </div>
         </div>
       </div>
