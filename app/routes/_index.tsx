@@ -1,8 +1,8 @@
 import type { V2_MetaFunction, LinksFunction } from "@remix-run/node";
 import { ArrowRight, ArrowUpRight, Bell, GitHub, Globe, Instagram, Mail, MapPin, Star, X } from "react-feather"
 import ProfilePicture from '../assets/profile.png';
-import StoreEditorDemo from '../assets/store-editor-demo.mov';
 import EdifloDemo from '../assets/ediflo-demo.gif';
+import ResumeSS from '../assets/resume-ss.png';
 import ElevatrDemo from '../assets/elevatr-demo.gif';
 import { useState } from 'react';
 import { Link } from '@remix-run/react';
@@ -275,6 +275,16 @@ export default function Index() {
             <ArrowRight color="#000" size={18} />
           </div>
         </Link>
+        <div className='flex flex-row flex-wrap items-center px-3 py-3 bg-2 rounded-3xl mt-6'>
+          <div className='flex flex-col w-full'>
+            <p className='leading-snug font-semibold px-3 mt-3 mb-4 flex items-center justify-between'>
+              <span>My resume</span>
+            </p>
+            <a href={'/assets/resume.pdf'} target='_blank' className='rounded-xl overflow-hidden'>
+              <img className='w-full' src={ResumeSS} />
+            </a>
+          </div>
+        </div>
       </div>
       <div className='py-20'></div>
     </>
