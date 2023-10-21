@@ -267,7 +267,7 @@ export default function Index() {
             </p>
           </div>
         </div>
-        <Link to="experience" className='inline-flex self-center flex-row flex-wrap items-center px-6 py-3 bg-[var(--accent)] rounded-3xl mt-1'>
+        <Link to="experience" className='inline-flex self-center flex-row flex-wrap items-center px-6 py-3 bg-[var(--accent)] rounded-3xl mt-3'>
           <div className='flex flex-row items-center'>
             <p style={{ color: "#000" }} className='font-semibold leading-snug pr-2'>
               See more
@@ -275,7 +275,7 @@ export default function Index() {
             <ArrowRight color="#000" size={18} />
           </div>
         </Link>
-        <div className='flex flex-row flex-wrap items-center px-3 py-3 bg-2 rounded-3xl mt-6'>
+        <div className='flex flex-row flex-wrap items-center px-3 py-3 bg-2 rounded-3xl mt-3'>
           <div className='flex flex-col w-full'>
             <p className='leading-snug font-semibold px-3 mt-3 mb-4 flex items-center justify-between'>
               <span>My resume</span>
