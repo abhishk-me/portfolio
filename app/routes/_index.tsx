@@ -135,7 +135,7 @@ export default function Index() {
         <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='flex flex-col lg:px-2 w-full'>
             <p className=' lg:text-lg leading-snug'>
-              I have more than 3 years of experience building apps and implementing features using technologies like NodeJS, expressJS, NestJS, GraphQL, MongoDB, couchbase, etc.
+              I have more than 4 years of experience building apps and implementing features using technologies like NodeJS, expressJS, NestJS, GraphQL, MongoDB, couchbase, etc.
             </p>
           </div>
         </div>
