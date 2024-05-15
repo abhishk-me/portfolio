@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProfileImage from '../assets/profile.png'
-import { ArrowRight, GitHub, Globe, Instagram, Linkedin, Mail, X } from 'react-feather';
+import { ArrowRight, GitHub, Instagram, Linkedin, Mail, X } from 'react-feather';
 import { Link, useLocation } from '@remix-run/react';
 
 export const MenuBar = () => {
@@ -13,6 +13,7 @@ export const MenuBar = () => {
   }, [location]);
 
   const images = [
+    "https://i.ibb.co/K913HKd/Screenshot-2024-05-14-at-11-38-25-PM.png",
     "https://i.ibb.co/sK8Qwnw/elevatr-inventory-shot.png",
     "https://i.ibb.co/ctxnMYM/dashboard-design-shot.png",
     "https://i.ibb.co/NxsdCRJ/elevatr-online-store-shot.png",
@@ -61,12 +62,12 @@ export const MenuBar = () => {
             <div className='flex flex-row px-2 pb-4 pt-1'>
               <div className='px-1 lg:px-2 flex flex-1 flex-col'>
                 <div className='aspect-[1.4] lg:aspect-[1.6] bg-white rounded-xl overflow-hidden'>
-                  <img className='w-full h-full object-cover' src={images[2]} />
+                  <img className='w-full h-full object-cover' src={images[0]} />
                 </div>
               </div>
               <div className='px-1 lg:px-2 flex flex-1 flex-col'>
                 <div className='aspect-[1.4] lg:aspect-[1.6] bg-white rounded-xl overflow-hidden'>
-                  <img className='w-full h-full object-cover' src={images[4]} />
+                  <img className='w-full h-full object-cover' src={images[3]} />
                 </div>
               </div>
               {/* <div className='px-1 lg:px-2 flex flex-1 flex-col'>
@@ -113,16 +114,16 @@ export const MenuBar = () => {
                     <ArrowRight size={16} strokeWidth={3} />
                   </span>
                 </Link>
+                <Link to={"https://ab-portfolio-six.vercel.app/"} target='_blank' className='py-0.5 font-bold hover:underline cursor-pointer flex items-center group/nav'>
+                  <span className='mr-1'>Something cool</span>
+                  <span className='group-hover/nav:translate-x-2 transition-transform'>
+                    <ArrowRight size={16} strokeWidth={3} />
+                  </span>
+                </Link>
               </div>
             </div>
             <div className='flex flex-1' />
             <div className='flex flex-row justify-center px-2 py-4'>
-              <Link to={"https://abhishekbhaskar.in"} target='_blank' className='flex flex-row items-center bg-black rounded-full h-10 p-1 cursor-pointer'>
-                <div className='h-8 w-8 flex items-center justify-center rounded-full bg-black'>
-                  <Globe size={18} color='#fff' />
-                </div>
-              </Link>
-              <span className='mx-1' />
               <Link to={"https://www.linkedin.com/in/abhishk-me/"} target='_blank' className='flex flex-row items-center bg-black rounded-full h-10 p-1 cursor-pointer'>
                 <div className='h-8 w-8 flex items-center justify-center rounded-full bg-black'>
                   <Linkedin size={18} color='#fff' />
@@ -135,7 +136,25 @@ export const MenuBar = () => {
                 </div>
               </Link>
               <span className='mx-1' />
-              <Link to={"mailto:abhishk.me@gmail.com"} className='flex flex-row items-center bg-black rounded-full h-10 p-1 group/mail cursor-pointer'>
+              <Link to={"mailto:abhishk.me@gmail.com"} target='_blank' className='flex flex-row items-center bg-black rounded-full h-10 p-1 cursor-pointer'>
+                <div className='h-8 w-8 flex items-center justify-center rounded-full bg-black'>
+                  <Mail size={18} color='#fff' />
+                </div>
+              </Link>
+              <span className='mx-1' />
+              <Link to={"https://www.github.com/abhishk-me"} target='_blank' className='flex flex-row items-center bg-black rounded-full h-10 p-1 group/mail cursor-pointer'>
+                <div className='h-8 w-8 flex items-center justify-center rounded-full overflow-hidden bg-white'>
+                  <GitHub size={18} color='#000' />
+                </div>
+                <div className={`pl-2 pr-4 h-6 overflow-hidden flex flex-1`}>
+                  <div className='h-12 lg:group-hover/mail:-translate-y-6 transition-transform duration-500'>
+                    <p className='h-6 flex items-center text-white font-semibold'>Github</p>
+                    <p className='h-6 flex items-center text-white font-semibold'>Github</p>
+                  </div>
+                </div>
+              </Link>
+              <span className='mx-1' />
+              {/* <Link to={"mailto:abhishk.me@gmail.com"} className='flex flex-row items-center bg-black rounded-full h-10 p-1 group/mail cursor-pointer'>
                 <div className='h-8 w-8 flex items-center justify-center rounded-full overflow-hidden bg-white'>
                   <Mail size={18} color='#000' />
                 </div>
@@ -145,7 +164,7 @@ export const MenuBar = () => {
                     <p className='h-6 flex items-center text-white font-semibold'>Say Hello!</p>
                   </div>
                 </div>
-              </Link>
+              </Link> */}
             </div>
             <p className='pb-4 text-center text-sm font-semibold px-6'>This site is designed and developed from scratch by me</p>
           </div>

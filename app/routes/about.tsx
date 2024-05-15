@@ -1,9 +1,5 @@
 import type { V2_MetaFunction, LinksFunction } from "@remix-run/node";
-import { ArrowRight, ArrowUpRight, Bell, Book, GitHub, Globe, Instagram, Mail, MapPin, Music, Play, Star, X } from "react-feather"
-import ProfilePicture from '../assets/profile.jpg';
-import StoreEditorDemo from '../assets/store-editor-demo.mov';
-import EdifloDemo from '../assets/ediflo-demo.gif';
-import ElevatrDemo from '../assets/entstaack-demo.gif';
+import { Music, Play } from "react-feather"
 import { useState } from 'react';
 import { Link } from '@remix-run/react';
 import { Spotify } from 'react-spotify-embed';
@@ -106,7 +102,7 @@ export default function Index() {
         <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='flex flex-col lg:px-2 w-full'>
             <p className=' lg:text-lg'>
-              Zooming ahead to 2023, I've worked for multiple early-stage and growing startups in high-octane settings. I've been right there, shoulder to shoulder with the people making critical decisions, and more often than not, I've played a pivotal role in guiding their technical choices.
+              Zooming ahead to 2024, I've worked for multiple early-stage and growing startups in high-octane settings. I've been right there, shoulder to shoulder with the people making critical decisions, and more often than not, I've played a pivotal role in guiding their technical choices.
             </p>
           </div>
         </div>

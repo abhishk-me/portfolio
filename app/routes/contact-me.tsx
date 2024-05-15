@@ -53,8 +53,6 @@ export const links: LinksFunction = () => {
 
 
 export default function Index() {
-  const [menuExpanded, setMenuExpanded] = useState(false)
-
   return (
     <>
       <div className='max-w-xl mx-auto px-4 flex flex-col flex-wrap'>

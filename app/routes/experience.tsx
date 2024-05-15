@@ -1,6 +1,7 @@
 import type { V2_MetaFunction, LinksFunction } from "@remix-run/node";
 import ElevatrSite from '../assets/elevatr-site.png';
 import EdifloVideoPlayer from '../assets/ediflo-video-player.gif';
+import DidiDemo from '../assets/didi-demo.gif';
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -62,8 +63,87 @@ export default function Index() {
           </div>
           <div className='flex flex-col pl-4 flex-1 w-auto pt-0'>
             <p className='text-lg lg:text-xl text-black font-semibold leading-snug'>
-              Past Work Experience
+              Work Experience
             </p>
+          </div>
+        </div>
+        <div className='flex flex-col flex-wrap items-center bg-2 rounded-3xl rounded-bl-lg mt-6 overflow-hidden'>
+          <div className='rounded-b-md overflow-hidden'>
+            <div className='dot-bg flex flex-row px-2 -mx-4 lg:mx-0 lg:px-4 py-4 overflow-hidden' >
+              <div className='flex flex-[3] flex-col -mt-8'>
+                <div className='flex flex-row'>
+                  <div className='flex flex-[3] flex-col'>
+                    <div className='h-28 rounded-xl overflow-hidden shadow-lg'>
+                      <img className='h-full w-full object-cover' src='https://i.ibb.co/nR5N8M5/Screenshot-2024-05-15-at-1-41-59-AM.png' />
+                    </div>
+                  </div>
+                  <span className='px-2 lg:px-3' />
+                  <div className='flex flex-[2] flex-col'>
+                    <div className='h-28 rounded-xl overflow-hidden shadow-lg'>
+                      <img className='h-full w-full object-cover' src='https://i.ibb.co/R30w0DD/Image-15-05-24-at-1-45-AM.jpg' />
+                    </div>
+                  </div>
+                </div>
+                <div className='h-40 rounded-xl overflow-hidden shadow-lg mt-4 lg:mt-6'>
+                  <img className='w-full h-full object-cover' src={DidiDemo} />
+                </div>
+                <div className='flex flex-row mt-2 lg:mt-6 -mb-8'>
+                  <div className='flex flex-[2] flex-col'>
+                    <div className='h-24 rounded-xl overflow-hidden shadow-lg bg-black'>
+                      <img className='h-full w-full object-cover' src='https://i.ibb.co/q0mrhnj/Screenshot-2024-05-15-at-1-48-40-AM.png' />
+                    </div>
+                  </div>
+                  <span className='px-1' />
+                  <div className='flex flex-[4] flex-col'>
+                    <div className='h-24 rounded-xl overflow-hidden shadow-lg bg-black'>
+                      <img className='w-full object-cover' src='https://i.ibb.co/994t3RF/Screenshot-2024-05-15-at-1-12-14-AM.png' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span className='px-2 lg:px-3' />
+              <div className='flex flex-[2] flex-col'>
+                <div className='h-48 rounded-xl overflow-hidden shadow-lg -mt-8 bg-black'>
+                  <img className='h-full w-full object-cover' src='https://i.ibb.co/9WvBL3w/Mac-Book-Pro-16-12.jpg' />
+                </div>
+                <div className='h-28 rounded-xl overflow-hidden shadow-lg mt-4 lg:mt-6 bg-black'>
+                  <img className='w-full object-cover' src='https://i.ibb.co/NyPZj1G/Image-15-05-24-at-3-08-AM.jpg' />
+                </div>
+                <div className='h-16 rounded-xl overflow-hidden shadow-lg mt-4 lg:mt-6 -mb-8'>
+                  <img className='w-full object-cover' src='https://i.ibb.co/ykxpd34/Screenshot-2024-05-15-at-1-47-20-AM.png' />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col px-6 w-full lg:px-8 py-4'>
+            <p className='text-4xl font-bold leading-snug flex items-center'>
+              <span>Atlys</span>
+              <span className='text-base font-medium ml-2 pt-1.5'>(Current)</span>
+            </p>
+            <p className='text-[var(--accent)] font-semibold leading-snug mt-3'>
+              Full stack developer.
+            </p>
+            <p className='text-[var(--accent)] opacity-60 text-sm leading-snug mt-1'>
+              Nov 2023 - Present
+            </p>
+            <p className='border self-start border-[var(--text)] border-opacity-30 rounded-full text-xs font-medium px-2 py-1 -mx-0.5 mt-4'>
+              Design and front-end
+            </p>
+            <ul className='list-disc pl-3.5'>
+              <li className='mt-2'>Revamped visa application process with a streamlined layout and impactful animations, driving a 30% increase in conversions.</li>
+              <li className='mt-2'>Developed a streamlined application funnel for intricate visa processes, simplifying the user experience through a stunning and intuitive interface with complex business logic at it's core.</li>
+              <li className='mt-2'>Refactored the entire front-end code, resulting in a performance boost that fueled SEO growth and conversion rate increases.</li>
+              <li className='mt-2'>Saved the company over $100k annually by building internal tools, including a robust CMS. </li>
+            </ul>
+            <p className='border self-start border-[var(--text)] border-opacity-30 rounded-full text-xs font-medium px-2 py-1 -mx-0.5 mt-6'>
+              Back-end
+            </p>
+            <ul className='list-disc pl-3.5'>
+              <li className='mt-2'>Migrated APIs from latency tools and bad practices to improve performance</li>
+              <li className='mt-2'>Developed a high-performance, in-house AI service using Python for OCR, data extraction, and document validation, achieving improved performance, data security and reduced costs compared to third-party solutions.</li>
+              <li className='mt-2'>Developed a referral service to power Atlys's intricate referral program</li>
+              <li className='mt-2'>Developed Node.js services to power internal tools, automating critical tasks for both visa processing and content management.</li>
+            </ul>
           </div>
         </div>
         <div className='flex flex-col flex-wrap items-center bg-2 rounded-3xl rounded-bl-lg mt-6 overflow-hidden'>
@@ -200,7 +280,7 @@ export default function Index() {
               Back-end
             </p>
             <ul className='list-disc pl-3.5'>
-              <li className='mt-2'>Helped developing APIs for various features.</li>
+              <li className='mt-2'>Developed APIs for various features.</li>
               <li className='mt-2'>Optimised existing APIs resulting in about 50% increase in performance in most cases.</li>
               <li className='mt-2'>Developed notification micro-service using NestJS providing easy integration with actions.</li>
               <li className='mt-2'>Implemented APIs for dashboard and reports.</li>

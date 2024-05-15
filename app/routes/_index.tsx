@@ -1,6 +1,7 @@
 import type { V2_MetaFunction, LinksFunction } from "@remix-run/node";
-import { ArrowRight, ArrowUpRight, Bell, GitHub, Globe, Instagram, Mail, MapPin, Star, X } from "react-feather"
+import { ArrowRight, Bell, MapPin, Star } from "react-feather"
 import ProfilePicture from '../assets/profile.png';
+import DidiDemo from '../assets/didi-demo.gif';
 import EdifloDemo from '../assets/ediflo-demo.gif';
 import ResumeSS from '../assets/resume-ss.png';
 import ElevatrDemo from '../assets/elevatr-demo.gif';
@@ -91,11 +92,11 @@ export default function Index() {
         <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='flex flex-col lg:px-2 w-full'>
             <p className=' lg:text-lg leading-snug'>
-              My preferred tech stack includes ReactJS, NodeJS and MongoDB but I'm flexible with tools and frameworks.
+              My current tech stack includes React/Next, Node, Python and PostgreSQL but I'm flexible with tools and frameworks.
             </p>
             <div className='flex flex-row flex-wrap mt-2 -mx-1.5 '>
               <p className='border border-[var(--text)] border-opacity-30 rounded-full text-xs font-medium px-4 py-1.5 m-0.5'>
-                ReactJS
+                React | Next | Remix
               </p>
               <p className='border border-[var(--text)] border-opacity-30 rounded-full text-xs font-medium px-4 py-1.5 m-0.5'>
                 React Native
@@ -104,13 +105,16 @@ export default function Index() {
                 NodeJS
               </p>
               <p className='border border-[var(--text)] border-opacity-30 rounded-full text-xs font-medium px-4 py-1.5 m-0.5'>
+                Python
+              </p>
+              <p className='border border-[var(--text)] border-opacity-30 rounded-full text-xs font-medium px-4 py-1.5 m-0.5'>
                 GraphQL
               </p>
               <p className='border border-[var(--text)] border-opacity-30 rounded-full text-xs font-medium px-4 py-1.5 m-0.5'>
                 MongoDB
               </p>
               <p className='border border-[var(--text)] border-opacity-30 rounded-full text-xs font-medium px-4 py-1.5 m-0.5'>
-                Couchbase
+                Poatgres
               </p>
             </div>
           </div>
@@ -128,6 +132,76 @@ export default function Index() {
         <div className='inline-flex self-end flex-row flex-wrap items-center px-6 py-4 bg-white rounded-3xl rounded-br-lg mt-12'>
           <div className='flex flex-col'>
             <p className='text-black font-semibold leading-snug'>
+              Design and front-end ?
+            </p>
+          </div>
+        </div>
+        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-col lg:px-2 w-full'>
+            <p className=' lg:text-lg leading-snug'>
+              I like to make digital experiences easy and simple for users with eye catching interfaces.
+            </p>
+          </div>
+        </div>
+        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-col lg:px-2 w-full'>
+            <p className='lg:text-lg leading-snug'>
+              Most of the time I work on features end to end - from designing and testing to development. This translates to designing for optimal development efficiency. Plus I can develop pretty much any feature.
+            </p>
+          </div>
+        </div>
+        <div className='inline-flex self-start flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-col pr-3'>
+            <p style={{ color: "var(--accent)" }} className='font-medium leading-snug'>
+              Some of my recent works:
+            </p>
+          </div>
+        </div>
+        <div className='flex flex-row flex-wrap items-center px-3 py-3 bg-2 rounded-3xl mt-1'>
+          <div className='flex flex-col w-full'>
+            <div className='rounded-xl overflow-hidden lg:hover:rounded-md lg:hover:scale-[2] transition-transform duration-500'>
+              <img className='w-full' src={DidiDemo} />
+            </div>
+            <p className='leading-snug font-semibold px-3 mt-3'>
+              Full feature CMS
+            </p>
+            <p className='leading-snug px-3 py-4'>
+              Built a powerful, in-house CMS at Atlys from scratch. Ditched Prismic, saving around $65k annually. It lets you create custom content types with specialized fields & drag-and-drop blocks, all with an intuitive Notion-like rich text editor. Blew Prismic away in UX and performance. Team loves it!
+            </p>
+          </div>
+        </div>
+        <div className='flex flex-row flex-wrap items-center px-3 py-3 bg-2 rounded-3xl mt-1'>
+          <div className='flex flex-col w-full'>
+            {/* <div className='rounded-xl overflow-hidden lg:hover:rounded-md lg:hover:scale-[2] transition-transform duration-500'>
+              <video className='w-full' src={StoreEditorDemo} autoPlay loop muted />
+            </div> */}
+            <div className='rounded-xl overflow-hidden lg:hover:rounded-md lg:hover:scale-[2] transition-transform duration-500'>
+              <img className='w-full' src={ElevatrDemo} />
+            </div>
+            <p className='leading-snug font-semibold px-3 mt-3'>
+              Online store builder
+            </p>
+            <p className='leading-snug px-3 py-4'>
+              I created an online store builder for elevatr. businesses can use templates or build an online store from scratch with custom design.
+            </p>
+          </div>
+        </div>
+        <div className='flex flex-row flex-wrap items-center px-3 py-3 bg-2 rounded-3xl mt-1'>
+          <div className='flex flex-col w-full'>
+            <div className='rounded-xl overflow-hidden lg:hover:rounded-md lg:hover:scale-[2] transition-transform duration-500'>
+              <img className='w-full' src={EdifloDemo} />
+            </div>
+            <p className='leading-snug font-semibold px-3 mt-3'>
+              Video collaboration software
+            </p>
+            <p className='leading-snug px-3 py-4'>
+              A video collaboration tool for producers and editors. Manage projects and tasks with Kanban board. Sharable video link to get reviews from anyone with features like comments on the timeline and highlighting frames.
+            </p>
+          </div>
+        </div>
+        <div className='inline-flex self-end flex-row flex-wrap items-center px-6 py-4 bg-white rounded-3xl rounded-br-lg mt-12'>
+          <div className='flex flex-col'>
+            <p className='text-black font-semibold leading-snug'>
               Back-end ?
             </p>
           </div>
@@ -135,14 +209,49 @@ export default function Index() {
         <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='flex flex-col lg:px-2 w-full'>
             <p className=' lg:text-lg leading-snug'>
-              I have more than 4 years of experience building apps and implementing features using technologies like NodeJS, expressJS, NestJS, GraphQL, MongoDB, couchbase, etc.
+              I have more than 4 years of experience building apps and implementing features using technologies like Node, Express, Python, FastAPI, NestJS, GraphQL, MongoDB, couchbase, Postgres, Kubernetes etc.
             </p>
           </div>
         </div>
         <div className='inline-flex self-start flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
           <div className='flex flex-col pr-3'>
             <p style={{ color: "var(--accent)" }} className='font-medium leading-snug'>
-              Some highlights:
+              Recent work at Atlys:
+            </p>
+          </div>
+        </div>
+        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-col lg:px-2 w-full'>
+            <p className=' lg:text-lg leading-snug'>
+              At Atlys, I developed a Node service powering our in-house CMS. This involved migrating data from Prismic, building a suite of APIs for diverse functionalities, and ultimately enhancing performance to boost SEO.
+            </p>
+          </div>
+        </div>
+        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-col lg:px-2 w-full'>
+            <p className=' lg:text-lg leading-snug'>
+              Developed a Python-based service that automates data extraction from various documents submitted during the visa application process. Leveraging AI tools, it performs OCR and intelligently parses the required information.
+            </p>
+          </div>
+        </div>
+        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-col lg:px-2 w-full'>
+            <p className=' lg:text-lg leading-snug'>
+              Built a referral engine that seamlessly manages the intricate criteria of Atlys's referral program.
+            </p>
+          </div>
+        </div>
+        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-col lg:px-2 w-full'>
+            <p className=' lg:text-lg leading-snug'>
+              Revamped API infrastructure by migrating from legacy tools and addressing inefficient practices, resulting in a significant performance improvement (up to 3x faster).
+            </p>
+          </div>
+        </div>
+        <div className='inline-flex self-start flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
+          <div className='flex flex-col pr-3'>
+            <p style={{ color: "var(--accent)" }} className='font-medium leading-snug'>
+              Other highlights:
             </p>
           </div>
         </div>
@@ -208,63 +317,6 @@ export default function Index() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-        <div className='inline-flex self-end flex-row flex-wrap items-center px-6 py-4 bg-white rounded-3xl rounded-br-lg mt-12'>
-          <div className='flex flex-col'>
-            <p className='text-black font-semibold leading-snug'>
-              Design and front-end ?
-            </p>
-          </div>
-        </div>
-        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
-          <div className='flex flex-col lg:px-2 w-full'>
-            <p className=' lg:text-lg leading-snug'>
-              I like to make digital experiences easy and simple for users with eye catching interfaces.
-            </p>
-          </div>
-        </div>
-        <div className='flex flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
-          <div className='flex flex-col lg:px-2 w-full'>
-            <p className='lg:text-lg leading-snug'>
-              Most of the time I work on features end to end - from designing and testing to development. This translates to designing for optimal development efficiency. Plus I can develop pretty much any feature.
-            </p>
-          </div>
-        </div>
-        <div className='inline-flex self-start flex-row flex-wrap items-center px-6 py-4 bg-2 rounded-3xl rounded-bl-lg mt-3'>
-          <div className='flex flex-col pr-3'>
-            <p style={{ color: "var(--accent)" }} className='font-medium leading-snug'>
-              Some of my recent works:
-            </p>
-          </div>
-        </div>
-        <div className='flex flex-row flex-wrap items-center px-3 py-3 bg-2 rounded-3xl mt-1'>
-          <div className='flex flex-col w-full'>
-            {/* <div className='rounded-xl overflow-hidden lg:hover:rounded-md lg:hover:scale-[2] transition-transform duration-500'>
-              <video className='w-full' src={StoreEditorDemo} autoPlay loop muted />
-            </div> */}
-            <div className='rounded-xl overflow-hidden lg:hover:rounded-md lg:hover:scale-[2] transition-transform duration-500'>
-              <img className='w-full' src={ElevatrDemo} />
-            </div>
-            <p className='leading-snug font-semibold px-3 mt-3'>
-              Online store builder
-            </p>
-            <p className='leading-snug px-3 py-4'>
-              I created an online store builder for elevatr. businesses can use templates or build an online store from scratch with custom design.
-            </p>
-          </div>
-        </div>
-        <div className='flex flex-row flex-wrap items-center px-3 py-3 bg-2 rounded-3xl mt-1'>
-          <div className='flex flex-col w-full'>
-            <div className='rounded-xl overflow-hidden lg:hover:rounded-md lg:hover:scale-[2] transition-transform duration-500'>
-              <img className='w-full' src={EdifloDemo} />
-            </div>
-            <p className='leading-snug font-semibold px-3 mt-3'>
-              Video collaboration software
-            </p>
-            <p className='leading-snug px-3 py-4'>
-              A video collaboration tool for producers and editors. Manage projects and tasks with Kanban board. Sharable video link to get reviews from anyone with features like comments on the timeline and highlighting frames.
-            </p>
           </div>
         </div>
         <Link to="experience" className='inline-flex self-center flex-row flex-wrap items-center px-6 py-3 bg-[var(--accent)] rounded-3xl mt-3'>
